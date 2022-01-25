@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1643089993 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\compilador_ssptlii\lexico.cpp
+	"lexico.h"
+
+1643089316 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\compilador_ssptlii\lexico.h
+	<iostream>
+	<string>
+
+1643088638 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\compilador_ssptlii\main.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	"lexico.h"
+
