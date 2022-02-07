@@ -11,9 +11,9 @@ using namespace std;
 
 int main(int argc, char *argv[]){
 
-    std::string cadena;
+    string cadena;
     cout << "\n\tMINI GENERADOR LEXICO\n\nEscribe la cadena a evaluar: " << endl;
-    cin>> cadena;
+    getline(cin, cadena);
     Lexico lexico;
     lexico.entrada(cadena);
 

@@ -52,6 +52,7 @@ class Lexico{
        bool esDigito(char c);
        bool esEspacio(char c);
        void retroceso();
+       void aceptacion2(int c);
 
       public:
        string simbolo;
