@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1644393884 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\main.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	"lexico.h"
+	"sintactico.h"
+
+1644392235 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\lexico.h
+	<iostream>
+	<string>
+
+1644384884 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\pila.cpp
+	"pila.h"
+	"lexico.h"
+	<sstream>
+
+1644384895 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1644393909 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\sintactico.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	"lexico.h"
+	"sintactico.h"
+	"pila.h"
+
+1644391258 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\lexico.cpp
+	"lexico.h"
+
+1644393094 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\minianalizadorsintactico_ssptlii\sintactico.h
+	<iostream>
+	<string>
+

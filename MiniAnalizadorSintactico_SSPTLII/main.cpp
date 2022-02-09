@@ -4,23 +4,21 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
-
 #include "lexico.h"
+#include "sintactico.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]){
 
-    string cadena;
-    cout << "\n\tMINI GENERADOR LEXICO\n\nEscribe la cadena a evaluar: " << endl;
-    getline(cin, cadena);
+    string cadena1 = "hola+mundo$";
+    string cadena2 = "a+b+c+d+e+f$";
     Lexico lexico;
-    lexico.entrada(cadena);
+    Sintactico sintactico;
+    sintactico.ejercicio1(cadena1);
+    sintactico.ejercicio2(cadena2);
 
-    cout << "\n\nResultados del Analisis Lexico:" << endl << endl;
-    cout << "Simbolo\t\tTipo" << endl;
-
-    while ( lexico.simbolo.compare("$") != 0 ){
+    while (lexico.simbolo.compare("$") != 0 ){
           lexico.sigSimbolo();
 
           cout <<  lexico.simbolo << "\t\t" << lexico.tipoAcad(lexico.tipo) << endl;
