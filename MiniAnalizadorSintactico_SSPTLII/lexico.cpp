@@ -1,4 +1,3 @@
-
 #include "lexico.h"
 
 Lexico::Lexico(string fuente) {
