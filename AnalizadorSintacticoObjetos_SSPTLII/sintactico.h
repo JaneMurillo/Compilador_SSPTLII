@@ -13,6 +13,7 @@ class Sintactico{
         Sintactico();
         void ejercicio1(string cadena);
         void ejercicio2(string cadena);
+        void ejemplo();
 
 };
 

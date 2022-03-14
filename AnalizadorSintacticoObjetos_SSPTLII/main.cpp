@@ -18,5 +18,8 @@ int main(int argc, char *argv[]){
     sintactico.ejercicio1(cadena1);
     sintactico.ejercicio2(cadena2);
 
+
     return 0;
 }
+
+

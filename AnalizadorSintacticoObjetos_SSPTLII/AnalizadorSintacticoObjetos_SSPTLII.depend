@@ -38,18 +38,18 @@
 1644391258 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.cpp
 	"lexico.h"
 
-1644392235 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.h
+1645426267 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.h
 	<iostream>
 	<string>
 
-1645405403 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\main.cpp
+1645426211 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\main.cpp
 	<cstdlib>
 	<iostream>
 	<string>
 	"lexico.h"
 	"sintactico.h"
 
-1644393094 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.h
+1645426225 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.h
 	<iostream>
 	<string>
 
@@ -58,8 +58,21 @@
 	"lexico.h"
 	<sstream>
 
-1644384895 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.h
+1645427868 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.h
 	<list>
 	<iostream>
 	<string>
+
+1645426846 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	"lexico.h"
+	"sintactico.h"
+	"pila.h"
+
+1645426018 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\src\elementopila.cpp
+	"elementopila.h"
+
+1645426017 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\include\elementopila.h
 
