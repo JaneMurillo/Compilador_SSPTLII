@@ -4,7 +4,7 @@ El contenido de esta primera etapa tiene la implementación del código para el 
 
 En la imagen se muestra una prueba de los tokens que identifica el mini analizador léxico:
 
-<img src="./images/funcionamiento-del-mini-analizador-lexico.png"
+<img src="./images/funcionamiento-mini-analizador-lexico.png">
 
 El desarrollo de esta etapa se implementó mediante los archivos 'main.cpp', 'lexico.h' y 'lexico.cpp'
 
