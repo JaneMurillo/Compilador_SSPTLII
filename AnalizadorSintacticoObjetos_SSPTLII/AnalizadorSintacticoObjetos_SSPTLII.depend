@@ -35,35 +35,36 @@
 	<iostream>
 	<string>
 
-1644391258 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.cpp
+1648939500 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.cpp
 	"lexico.h"
 
-1645426267 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.h
+1648939482 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\lexico.h
 	<iostream>
 	<string>
 
-1645426211 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\main.cpp
+1648938779 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\main.cpp
 	<cstdlib>
 	<iostream>
 	<string>
 	"lexico.h"
 	"sintactico.h"
+	"pila.h"
 
 1645426225 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.h
 	<iostream>
 	<string>
 
-1645395592 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.cpp
+1648939055 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.cpp
 	"pila.h"
 	"lexico.h"
 	<sstream>
 
-1645427868 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.h
+1648939226 f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\pila.h
 	<list>
 	<iostream>
 	<string>
 
-1645426846 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.cpp
+1648938476 source:f:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintacticoobjetos_ssptlii\sintactico.cpp
 	<cstdlib>
 	<iostream>
 	<string>

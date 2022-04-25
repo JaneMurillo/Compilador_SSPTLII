@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int tablaLR1[5][4] = { 2, 0, 0, 1,
+/*int tablaLR[5][4] = { 2, 0, 0, 1,
                        0, 0, -1, 0,
                        0, 3, 0, 0,
                        4, 0, 0, 0,
@@ -17,7 +17,7 @@ int tablaLR2[5][4] = { 2, 0, 0, 1,
                        0, 0, -1, 0,
                        0, 3, -3, 0,
                        2, 0,0, 4,
-                       0, 0, -2, 0 };
+                       0, 0, -2, 0 };*/
 
 Sintactico::Sintactico(string cadena) {
     cout << "";
@@ -35,11 +35,11 @@ int fila, columna, accion;
 bool aceptacion = false;
 
 /* Reducciones
--1. Reducci髇 0 (aceptaci髇)
--2. Reducci髇 1
--3. Reducci髇 2
--4. Reducci髇 3
--n. Reducci髇 n-1
+-1. Reducci贸n 0 (aceptaci贸n)
+-2. Reducci贸n 1
+-3. Reducci贸n 2
+-4. Reducci贸n 3
+-n. Reducci贸n n-1
 */
 
 
