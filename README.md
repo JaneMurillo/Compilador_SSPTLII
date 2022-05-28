@@ -18,7 +18,7 @@ El contenido de esta primera etapa tiene la implementación del código para el 
 
 En la imagen se muestra una prueba de los tokens que identifica el mini analizador léxico:
 
-<img src="./MiniAnalizadorLexico/images/funcionamiento-mini-analizador-lexico.png">
+<img src="./MiniAnalizadorLexico_SSPTLII/images/funcionamiento-mini-analizador-lexico.png">
 
 La entrada de la cadena obtenida en 'main.cpp', de manera que cuando se obtiene un token, se analiza en los distintos casos posibles:
 - Determinar si es una letra
@@ -26,7 +26,7 @@ La entrada de la cadena obtenida en 'main.cpp', de manera que cuando se obtiene 
 - Determinar si es un carácter de adición
 - Determinar si es un carácter de multiplicación
 
-Dentro de la carpeta *MiniAnalizadorLexico*, en el README.ms se puede leer más información acerca de ello.
+Dentro de la carpeta *MiniAnalizadorLexico_SSPTLII*, en el README.ms se puede leer más información acerca de ello.
 
 
 ## Analizador Léxico
@@ -58,11 +58,11 @@ El programa se desarrolla mediante el uso de una Pila de enteros, que va validan
 
 En la imagen se muestran los distintos tokens analizados, en la entrada, salida y la pila:
 
-<img src="./MiniAnalizadorSintactico/images/Funcionamiento_del_mini_analizador_sintactico.png">
-<img src="./MiniAnalizadorSintactico/images/Funcionamiento_del_mini_analizador_sintactico_e2_1.png">
-<img src="./MiniAnalizadorSintactico/images/Funcionamiento_del_mini_analizador_sintactico_e2_2.png">
+<img src="./MiniAnalizadorSintactico_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico.png">
+<img src="./MiniAnalizadorSintactico_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico_e2_1.png">
+<img src="./MiniAnalizadorSintactico_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico_e2_2.png">
 
-Dentro de la carpeta *MiniAnalizadorSintactico*, en el README.ms se puede leer más información acerca de ello.
+Dentro de la carpeta *MiniAnalizadorSintactico_SSPTLII*, en el README.ms se puede leer más información acerca de ello.
 
 ## Mini Analizador Sintáctico con Objetos
 
