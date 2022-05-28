@@ -48,6 +48,16 @@ class Licenciatura: public Alumno{
         cout << "Creditos: " << creditos << endl << endl;
     }
 };*/
+class Nodo{
+    public:
+        string simbolo;
+        Nodo *sig;
+        void muestraNodo()
+        {
+            cout << " ";
+        }
+        virtual void muestra() {};
+};
 
 class ElementoPila{
 protected:
@@ -75,13 +85,14 @@ class Noterminal: public ElementoPila {
 protected:
 
 public:
-    Noterminal(string simbolo){
-        this->simbolo = simbolo;
+    Nodo* nodo;
+    Noterminal(Nodo* elemento){
+        this->nodo = elemento;
     }
     void muestra(){
-        cout<<simbolo;
+        nodo->muestraNodo();
     }
-    string regresar(){ return simbolo; }
+    string regresar(){ return nodo->simbolo; }
 };
 
 class Estado: public ElementoPila{

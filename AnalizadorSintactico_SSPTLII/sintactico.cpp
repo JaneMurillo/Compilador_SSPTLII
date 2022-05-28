@@ -7,7 +7,7 @@
 
 using namespace std;
 
-/*int tablaLR[5][4] = { 2, 0, 0, 1,
+int tablaLR1[5][4] = { 2, 0, 0, 1,
                        0, 0, -1, 0,
                        0, 3, 0, 0,
                        4, 0, 0, 0,
@@ -17,7 +17,7 @@ int tablaLR2[5][4] = { 2, 0, 0, 1,
                        0, 0, -1, 0,
                        0, 3, -3, 0,
                        2, 0,0, 4,
-                       0, 0, -2, 0 };*/
+                       0, 0, -2, 0 };
 
 Sintactico::Sintactico(string cadena) {
     cout << "";
@@ -102,7 +102,7 @@ void Sintactico::ejercicio1(string cadena) {
         fila = stoi(simb->regresar()); // 1
         columna = 3; // R1, entonces la columna va al 3 para E
         accion = tablaLR1[fila][columna]; // [0][3] = 1
-        pila.push(new Noterminal("E")); // 3
+        //  pila.push(new Noterminal("E")); // 3
         pila.push(new Estado(to_string(accion))); // 1
         pila.muestra(); // 2 0 3 1
         cout << "Entrada: " << lexico.simb << endl; // $
@@ -162,7 +162,7 @@ void  Sintactico::ejercicio2(string cadena) {
             fila = stoi(simb->regresar()); // 1
             columna = 3; // R1, entonces la columna va al 3 para E
             accion = tablaLR2[fila][columna]; // [0][3] = 1
-            pila.push(new Noterminal("E")); // 3
+            //  pila.push(new Noterminal("E")); // 3
             pila.push(new Estado(to_string(accion))); // 1
             pila.muestra(); // 2 0 3 1
             cout << "Entrada: " << lexico.simb << endl;
@@ -180,7 +180,7 @@ void  Sintactico::ejercicio2(string cadena) {
                 fila = stoi(simb->regresar()); // 1
                 columna = 3; // R1, entonces la columna va al 3 para E
                 accion = tablaLR2[fila][columna]; // [0][3] = 1
-                pila.push(new Noterminal("E")); // 3
+                //  pila.push(new Noterminal("E")); // 3
                 pila.push(new Estado(to_string(accion))); // 1
                 pila.muestra(); // 2 0 3 1
                 cout << "Entrada: " << lexico.simb << endl;
@@ -202,5 +202,348 @@ void  Sintactico::ejercicio2(string cadena) {
     if (aceptacion){
         cout << "Aceptacion " << endl;
     }
+}
+
+void Sintactico::Gramatica(int tablaLR[96][46], string& ejemplo, string idR[], string longR[], string nameR[]){
+    int band = 0, fila, columna, accion = 1, j = 0, aceptacion = 0;
+    string nameA;
+    Pila pila;
+    ElementoPila* simb;
+    Lexico lexico;
+    lexico.entrada(ejemplo);
+    pila.push(new Terminal("$")); // 2
+    Nodo* temp = new Nodo;
+    pila.push(new Estado("0")); // 0
+
+    Nodo* actual = new Nodo;
+
+    while(accion != -1) // Mientras no sea la aceptación
+    {
+        if (j == 0){
+            j = 0;
+            lexico.sigSimbolo(); // a = id
+        }
+
+        simb = pila.top(); //fila = pila.top();
+        fila = stoi(simb->regresar()); // 1
+        columna = lexico.tipo; // id = 0
+        accion = tablaLR[fila][columna]; // [0][0] = d2
+
+        if(accion > 0){
+            j = 0;
+            pila.muestra(); // 2 0
+            cout << "Entrada: " << lexico.simb << endl;
+            cout << "Accion: " << accion << endl;
+            pila.push(new Terminal(lexico.simb)); // 3
+            pila.push(new Estado(to_string(accion))); // 1
+            pila.muestra(); // 2 0 3 1
+        }
+        else if(accion < 0 && accion != -1){
+            int longA = 0;
+            j = 1;
+            pila.muestra();
+            cout << "Entrada: " << lexico.simb << endl;
+            cout << "Accion: " << accion << endl;
+            accion = abs(accion);
+            longA = stoi(longR[accion - 2]);
+            nameA = nameR[accion - 2];
+            sigRegla(accion, pila);
+
+            band++;
+            if (band == 1){
+                actual->simbolo = nameA;
+                actual->sig = nullptr;
+                temp = actual;
+            }
+            else
+            {
+                temp = push(&actual, nameA);
+            }
+            simb = pila.top();
+            fila = stoi(simb->regresar());
+            columna = stoi(idR[accion - 2]);
+            pila.push(new Noterminal(temp));
+            pila.muestra();
+            accion = tablaLR[fila][columna];
+            pila.push(new Estado(to_string(accion)));
+            pila.muestra();
+        }
+    }
+    temp->sig->muestra();
+}
+
+
+void Sintactico::sigRegla(int nRegla, Pila& pila)
+{
+    switch(nRegla - 1)
+    {
+        case 1:
+            {
+                R1 r1(pila);
+            }
+            break;
+        case 3:
+            {
+                R3 r3(pila);
+            }
+            break;
+        case 4:
+            {
+                R4 r4(pila);
+            }
+            break;
+        case 5:
+            {
+                R5 r5(pila);
+            }
+            break;
+        case 6:
+            {
+                R6 r6(pila);
+            }
+            break;
+        case 7:
+            {
+                cout << "";
+            }
+            break;
+        case 8:
+            {
+                cout << "";
+            }
+            break;
+        case 9:
+            {
+                cout << "";
+            }
+            break;
+        case 10:
+            {
+                cout << "";
+            }
+            break;
+        case 11:
+            {
+                cout << "";
+            }
+            break;
+        case 12:
+            {
+                cout << "";
+            }
+            break;
+        case 13:
+            {
+                cout << "";
+            }
+            break;
+        case 14:
+            {
+                cout << "";
+            }
+            break;
+        case 15:
+            {
+                cout << "";
+            }
+            break;
+        case 16:
+            {
+                cout << "";
+            }
+            break;
+        case 17:
+            {
+                cout << "";
+            }
+            break;
+        case 18:
+            {
+                cout << "";
+            }
+            break;
+        case 19:
+            {
+                cout << "";
+            }
+            break;
+        case 20:
+            {
+                cout << "";
+            }
+            break;
+        case 21:
+            {
+                cout << "";
+            }
+            break;
+        case 22:
+            {
+                cout << "";
+            }
+            break;
+        case 23:
+            {
+                cout << "";
+            }
+            break;
+        case 24:
+            {
+                cout << "";
+            }
+            break;
+        case 25:
+            {
+                cout << "";
+            }
+            break;
+        case 26:
+            {
+                cout << "";
+            }
+            break;
+        case 27:
+            {
+                cout << "";
+            }
+            break;
+        case 28:
+            {
+                cout << "";
+            }
+            break;
+        case 29:
+            {
+                cout << "";
+            }
+            break;
+        case 30:
+            {
+                cout << "";
+            }
+            break;
+        case 31:
+            {
+                cout << "";
+            }
+            break;
+        case 32:
+            {
+                cout << "";
+            }
+            break;
+        case 33:
+            {
+                cout << "";
+            }
+            break;
+        case 34:
+            {
+                cout << "";
+            }
+            break;
+        case 35:
+            {
+                cout << "";
+            }
+            break;
+        case 36:
+            {
+                cout << "";
+            }
+            break;
+        case 37:
+            {
+                cout << "";
+            }
+            break;
+        case 38:
+            {
+                cout << "";
+            }
+            break;
+        case 39:
+            {
+                cout << "";
+            }
+            break;
+        case 40:
+            {
+                cout << "";
+            }
+            break;
+        case 41:
+            {
+                cout << "";
+            }
+            break;
+        case 42:
+            {
+                cout << "";
+            }
+            break;
+        case 43:
+            {
+                cout << "";
+            }
+            break;
+        case 44:
+            {
+                cout << "";
+            }
+            break;
+        case 45:
+            {
+                cout << "";
+            }
+            break;
+        case 46:
+            {
+                cout << "";
+            }
+            break;
+        case 47:
+            {
+                cout << "";
+            }
+            break;
+        case 48:
+            {
+                cout << "";
+            }
+            break;
+        case 49:
+            {
+                cout << "";
+            }
+            break;
+        case 50:
+            {
+                cout << "";
+            }
+            break;
+        case 51:
+            {
+                cout << "";
+            }
+            break;
+        case 52:
+            {
+                cout << "";
+            }
+            break;
+
+        default:
+            break;
+        }
+}
+
+Nodo* Sintactico::push(Nodo** head_ref, string data)
+{
+    Nodo* new_node = new Nodo();
+    new_node->simbolo = data;
+    new_node->sig = (*head_ref);
+    (*head_ref) = new_node;
+    return new_node;
 }
 
