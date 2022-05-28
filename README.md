@@ -70,19 +70,24 @@ El contenido de esta etapa tiene la implementación del código para el uso de u
 
 En las imagenes se muestra cómo se realiza el análisis mediante el Algoritmo de apilar con Objetos:
 
-<img src="./images/Funcionamiento_del_mini_analizador_sintactico.png">
-<img src="./images/Funcionamiento_del_mini_analizador_sintactico_e2_1.png">
-<img src="./images/Funcionamiento_del_mini_analizador_sintactico_e2_2.png">
+<img src="./AnalizadorSintacticoObjetos_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico.png">
+<img src="./AnalizadorSintacticoObjetos_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico_e2_1.png">
+<img src="./AnalizadorSintacticoObjetos_SSPTLII/images/Funcionamiento_del_mini_analizador_sintactico_e2_2.png">
 
 Se implementó la clase padre ElementoPila, donde de ella surgen sus clases hijos 'Terminal', 'NoTerminal' y 'Estado' para que la clase Pila que tenia originalmente, reciba los objetos que regresan estas clases, los cuales se analizan al introducir uno a uno en la Pila de objetos ya sea con su clasificación de Terminal, Estado o No Terminal.
-Dentro de la carpeta *MiniAnalizadorSintactico_SSPTLII*, en el README.ms se puede leer más información acerca de ello.
+Dentro de la carpeta *AnalizadorSintacticoObjetos_SSPTLII*, en el README.md se puede leer más información acerca de ello.
 
 
 # Proyecto IoT NODEMCU8266 Sensor
 
-En este apartado
-En la carpeta *IoT-NODEMCU8266-Sensor* se encuentran los archivos utilizados para el desarrollo e implementación del Proyecto del Internet de las cosas que conecta una placa NODEMCU8266 con un broker, utilizando las tecnologías de Docker, K8s, K3S, K3D y Rancher. En el archivo 'Proyecto-IoT' se puede observar más información acerca del mismo.
+En este apartado se muestra cómo se desarrolla el despliegue de la implementación del Proyecto del Internet son un Sensor, el cuál conecta una placa NODEMCU8266 con un broker, utilizando las tecnologías de Docker, K8s, K3S, K3D y Rancher.
+En la carpeta *IoT-NODEMCU8266-Sensor* se encuentran los archivos utilizados para el desarrollo, donde en el archivo 'Proyecto-IoT' se puede observar más información acerca del mismo.
 
+## Arquitectura del Proyecto
+
+En la siguiente imagen se muestra la arquitectura propuesta para que el sistema muestre el uso de los sensores y el led mediante el broker EMQX.
+
+<img src="./IoT-NODEMCU8366-Sensor/Arquitectura.png">
 
 ## Despliegue del Proyecto
 
@@ -93,7 +98,7 @@ Para el despliegue del proyecto se debe de tener como herramientas:
 * Cable usb con puerto Micro-B
 * 2 leds
 * 2 fotoresistencias
-* 2 
+* 1 resistencia
 * Para observar mejor el funcionamiento del módulo de internet, se recomienda una PowerRank
 
 Y previamente instalado:
@@ -126,6 +131,13 @@ Pd. También existe la ESP8285 (Es la 12)
 De esta manera, una vez seleccionada la placa, procedemos a, dentro del código, poner nuestra red de internet a la cuál nos conectaremos, junto con su contraseña. Así, ya podemos compilar el programa para cargarlo a la placa, de esta forma, comenzará a buscar la señal del internet previamente configurado, y en la pantalla de salida del IDE, esperaremos hasta observar el mensaje de que 'Se ha conectado al internet'. 
 El siguiente paso es opcional, el cuál consiste en decidir si dejar la placa conectada a la computadora o conectar la placa a un PowerRank (cuando se conecta a este último, se demuestra que la placa puede seguir utilizando el programa aún cuando ya no esta conectado a nuestro equipo, utilizando su modulo ESP8266 que contiene el dispositivo WiFi.
 
+Las conexiones que fueron utilizadas de acuerdo a al diagrama de la arquitectura se muestran en la siguiente imagen:
+
+
+Además, n el siguiente link se explica a mayor detalle cómo se realizó este apartado del proyecto además de la demostración del funcionamiento del mismo: https://drive.google.com/file/d/1ddA4rBIDVZXG3Wm8QdmoKxumuqb20x7B/view?usp=sharing
+
+<img src="./IoT-NODEMCU8366-Sensor/Conexiones.png">
+
 Después, el siguiente paso es dirigirnos al Broker EMQX de la siguiente manera:
 
 1. Entrar a la página emqx.com/en
@@ -150,8 +162,8 @@ https://www.emqx.com/en/mqtt/public-mqtt5-broker o buscar la opción 'Publick mq
 
 De esta manera, si el mensaje ha sido enviado correctamente, el led de la placa NODEMCU8266 prenderá o se apagará, según reciba el mensaje.
 
+En el broker, se mostrará la información que se obtiene de los resultados del sensor:
 
+<img src="./IoT-NODEMCU8366-Sensor/EMQX-Broker.png">
 
-En el siguiente link se explica a mayor detalle cómo se realizó este apartado del proyecto además de la demostración del funcionamiento del mismo.
-https://drive.google.com/file/d/1ddA4rBIDVZXG3Wm8QdmoKxumuqb20x7B/view?usp=sharing
 
