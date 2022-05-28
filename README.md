@@ -12,6 +12,7 @@ Las actividades para el desarrollo del Compilador se encuentran divididas en las
 
 
 
+
 ## Mini Analizador Léxico
 
 El contenido de esta primera etapa tiene la implementación del código para el comienzo del desarrollo de un compilador: el Análisis Léxico, con el cuál, será posible  leer secuencias de caracteres de entrada, para de esta manera analizar y buscar los componentes léxicos que recibe, comprobando si los tokens que obtiene son legales para el análisis de identificadores, números enteros, números reales, junto con operadores de adición y de multiplicacion.
@@ -65,6 +66,7 @@ En la imagen se muestran los distintos tokens analizados, en la entrada, salida 
 Dentro de la carpeta *MiniAnalizadorSintactico_SSPTLII*, en el README.ms se puede leer más información acerca de ello.
 
 ## Mini Analizador Sintáctico con Objetos
+
 
 
 
