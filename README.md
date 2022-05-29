@@ -77,6 +77,16 @@ En las imagenes se muestra cómo se realiza el análisis mediante el Algoritmo d
 Se implementó la clase padre ElementoPila, donde de ella surgen sus clases hijos 'Terminal', 'NoTerminal' y 'Estado' para que la clase Pila que tenia originalmente, reciba los objetos que regresan estas clases, los cuales se analizan al introducir uno a uno en la Pila de objetos ya sea con su clasificación de Terminal, Estado o No Terminal.
 Dentro de la carpeta *AnalizadorSintacticoObjetos_SSPTLII*, en el README.md se puede leer más información acerca de ello.
 
+### Análizador Sintáctico Gramática
+
+El Analizador Sintáctico desarrollado en esta etapa comprueba la correcta construcción de las cadenas introducidas, de manera que en base al 'Archivo.lr', se utilizó la matriz de las reglas de la gramática, donde los atributos de dichas reglas son utilizados mediante nodos. Los atributos corresponden a el id de la regla, nombre de la regla y cantidad de tokens de la regla, información la cuál se va a guardar en para su impresión final en el Árbol Sintáctico. Cada regla tiene su propia clase con sus atributos con su método 'muestra()'.
+
+<img src="./nalizadorSintactico_SSPTLII/images/Analizador_sintactico.png">
+<img src="./nalizadorSintactico_SSPTLII/images/Analizador_sintactico2.png">
+
+Las imagenes anteriores corresponden a el recorrido del Árbol Sintáctico.
+Dentro de la carpeta *AnalizadorSintactico_SSPTLII*, en el README.md se puede observar el código utilizado para la implementación del programa.
+
 
 # Proyecto IoT NODEMCU8266 Sensor
 # ![Proyecto IOT NodeMCU8266](https://user-images.githubusercontent.com/40220378/170843779-1dfd5265-59ee-4319-850b-68073664d2c9.png)
