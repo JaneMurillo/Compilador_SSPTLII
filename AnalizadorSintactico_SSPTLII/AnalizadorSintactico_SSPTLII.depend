@@ -45,10 +45,10 @@
 	<string>
 	"pila.h"
 
-1651956922 source:h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.cpp
+1653811537 source:h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.cpp
 	"lexico.h"
 
-1648952862 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.h
+1653811504 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.h
 	<iostream>
 	<string>
 
@@ -62,18 +62,18 @@
 	"ArbolSintactico.h"
 	"pila.h"
 
-1651965634 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\sintactico.h
+1653809455 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\sintactico.h
 	<iostream>
 	<string>
 	"pila.h"
 	"ArbolSintactico.h"
 
-1651964734 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\pila.h
+1653811034 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\pila.h
 	<list>
 	<iostream>
 	<string>
 
-1651966610 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\arbolsintactico.h
+1653811016 h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\arbolsintactico.h
 	<iostream>
 	<string>
 	"pila.h"
@@ -84,6 +84,52 @@
 	<sstream>
 
 1651966416 source:h:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\sintactico.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	"lexico.h"
+	"sintactico.h"
+	"pila.h"
+
+1651956922 source:d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.cpp
+	"lexico.h"
+
+1648952862 d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\lexico.h
+	<iostream>
+	<string>
+
+1651967038 source:d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\main.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+	<fstream>
+	"lexico.h"
+	"sintactico.h"
+	"ArbolSintactico.h"
+	"pila.h"
+
+1651965634 d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\sintactico.h
+	<iostream>
+	<string>
+	"pila.h"
+	"ArbolSintactico.h"
+
+1651964734 d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\pila.h
+	<list>
+	<iostream>
+	<string>
+
+1651966610 d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\arbolsintactico.h
+	<iostream>
+	<string>
+	"pila.h"
+
+1648943204 source:d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\pila.cpp
+	"pila.h"
+	"lexico.h"
+	<sstream>
+
+1651966416 source:d:\protegida\desc\6. semestre\6. 2. s. trad. leng. ii\compilador_ssptlii\analizadorsintactico_ssptlii\sintactico.cpp
 	<cstdlib>
 	<iostream>
 	<string>

@@ -126,7 +126,7 @@ int Lexico::sigSimbolo(){
 
     estado=0;
     continua= true;
-    simb= "";
+    simbolo= "";
 
     while (continua){
       c= sigCaracter();
@@ -174,15 +174,15 @@ int Lexico::sigSimbolo(){
             }
             else if (esLetra(c)){
                 sigEstado(1);
-                if(simb == "int"||simb == "float"||simb == "void") aceptacion(4);
+                if(simbolo == "int"||simbolo == "float"||simbolo == "void") aceptacion(4);
                     else
-                    if (simb == "if") aceptacion(19);
+                    if (simbolo == "if") aceptacion(19);
                     else
-                    if (simb == "while") aceptacion(20);
+                    if (simbolo == "while") aceptacion(20);
                     else
-                    if (simb == "return") aceptacion(21);
+                    if (simbolo == "return") aceptacion(21);
                     else
-                    if (simb == "else") aceptacion(22);
+                    if (simbolo == "else") aceptacion(22);
                 }
             else if (id==1){
                  retroceso();
@@ -339,7 +339,7 @@ int Lexico::sigSimbolo(){
 
   void Lexico::sigEstado(int estado){//Checa al inicio los valores
        this->estado= estado;
-       simb+= c;
+       simbolo+= c;
   }
 
   void Lexico::aceptacion(int estado){

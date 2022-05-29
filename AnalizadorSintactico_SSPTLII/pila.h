@@ -51,7 +51,7 @@ class Licenciatura: public Alumno{
 class Nodo{
     public:
         string simbolo;
-        Nodo *sig;
+        Nodo *pts;
         void muestraNodo()
         {
             cout << " ";
@@ -86,12 +86,13 @@ protected:
 
 public:
     Nodo* nodo;
-    Noterminal(Nodo* elemento){
-        this->nodo = elemento;
+    Noterminal(Nodo* simbolo){
+        this->nodo = simbolo;
     }
     void muestra(){
         nodo->muestraNodo();
     }
+    Nodo* getNodo(){ return nodo; }
     string regresar(){ return nodo->simbolo; }
 };
 

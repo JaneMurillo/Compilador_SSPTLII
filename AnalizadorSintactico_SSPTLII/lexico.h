@@ -56,7 +56,7 @@ class Lexico{
        void aceptacion2(int c);
 
       public:
-       string simb;
+       string simbolo;
        int tipo;
 
        Lexico(string fuente);
