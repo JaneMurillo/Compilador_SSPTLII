@@ -4,11 +4,11 @@ En este repositorio se encuentran las carpetas donde se encuentra el código de 
 
 Las actividades para el desarrollo del Compilador se encuentran divididas en las siguientes carpetas:
 
-* Actividad 1: **MiniAnalizadorLexico** - Mini Analizador Léxico
+* Actividad 1: **MiniAnalizadorLexico_SSPTLII** - Mini Analizador Léxico
 * Actividad 2: **Compilador_SSPTLII** - Analizador Léxico
-* Actividad 3: **MiniAnalizadorSintactico** - Mini Analizador sintáctico
-* Actividad 4: **AnalizadorSintacticoObjetos** - Analizador Sintáctico implementación usando Objetos
-* Actividad 5: **AnalizadorSintacticoGramatica** - Gramática del compilador
+* Actividad 3: **MiniAnalizadorSintactico_SSPTLII** - Mini Analizador sintáctico
+* Actividad 4: **AnalizadorSintacticoObjetos_SSPTLII** - Analizador Sintáctico implementación usando Objetos
+* Actividad 5: **AnalizadorSintactico_SSPTLII** - Gramática del compilador
 
 
 
@@ -81,8 +81,8 @@ Dentro de la carpeta *AnalizadorSintacticoObjetos_SSPTLII*, en el README.md se p
 
 El Analizador Sintáctico desarrollado en esta etapa comprueba la correcta construcción de las cadenas introducidas, de manera que en base al 'Archivo.lr', se utilizó la matriz de las reglas de la gramática, donde los atributos de dichas reglas son utilizados mediante nodos. Los atributos corresponden a el id de la regla, nombre de la regla y cantidad de tokens de la regla, información la cuál se va a guardar en para su impresión final en el Árbol Sintáctico. Cada regla tiene su propia clase con sus atributos con su método 'muestra()'.
 
-<img src="./nalizadorSintactico_SSPTLII/images/Analizador_sintactico.png">
-<img src="./nalizadorSintactico_SSPTLII/images/Analizador_sintactico2.png">
+<img src="./AnalizadorSintactico_SSPTLII/images/Analizador_sintactico.png">
+<img src="./AnalizadorSintactico_SSPTLII/images/Analizador_sintactico2.png">
 
 Las imagenes anteriores corresponden a el recorrido del Árbol Sintáctico.
 Dentro de la carpeta *AnalizadorSintactico_SSPTLII*, en el README.md se puede observar el código utilizado para la implementación del programa.
